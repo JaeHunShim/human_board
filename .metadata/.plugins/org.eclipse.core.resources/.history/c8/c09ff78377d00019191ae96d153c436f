@@ -1,0 +1,15 @@
+package board;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+
+@Controller
+public class IndexController {
+
+	@RequestMapping("/")
+	public index(ModelMap model) throws Exception {
+		
+		model.addAttribute("name","jaehun");
+		return "index";
+	}
+}
